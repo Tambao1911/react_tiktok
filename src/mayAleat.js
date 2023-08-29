@@ -1,4 +1,4 @@
 const myAlert = () => {
-    alert('hi')
+    alert('hello anh em oi')
 }
 export default myAlert
