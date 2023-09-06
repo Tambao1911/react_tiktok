@@ -12,6 +12,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'
+import { Link } from 'react-router-dom';
 
 import Button from '~/component/Button';
 import styles from './Header.module.scss'
@@ -92,7 +93,7 @@ function Header() {
     ]
     return <header className={cx('wrapper')}>
         <div className={cx('inner')}>
-            <img src={images.logo} alt="TikTok" />
+            <Link to='/'><img src={images.logo} alt="TikTok" /></Link>
 
             <Search />
 
