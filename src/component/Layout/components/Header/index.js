@@ -9,7 +9,6 @@ import {
     faEarthAsia,
     faCircleQuestion,
     faKeyboard,
-    faCloudUpload,
     faUser,
     faCoins,
     faGear,
@@ -25,6 +24,8 @@ import styles from './Header.module.scss'
 import images from '~/assets/images';
 import AccountItem from '~/component/AccountItem';
 import Menu from '~/component/Popper/Menu';
+import { UploadIcon } from '~/component/icons';
+import Image from '~/component/Image';
 
 const cx = classNames.bind(styles)
 const MENU_ITEMS = [
@@ -141,7 +142,7 @@ function Header() {
                     <>
                         <Tippy delay={[0, 200]} content='UpLoad Video' placement='bottom'>
                             <button className={cx('action-btn')}>
-                                <FontAwesomeIcon icon={faCloudUpload} />
+                                <UploadIcon />
                             </button>
                         </Tippy>
 
@@ -160,7 +161,7 @@ function Header() {
                     onChange={handleMenuChange}
                 >
                     {currentUser ? (
-                        <img className={cx('user-avatar')} alt='Tâm Bảo' src='https://gaixinhbikini.com/wp-content/uploads/2023/02/hinh-co-gai-xinh-dep-005.jpg' />
+                        <Image className={cx('user-avatar')} alt='Tâm Bảo' src='https://gaixinhbikini.com/wp-content/uploads/2023/02/hinh-co-gai-xinh-dep-005.jpg' />
                     ) : (
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
