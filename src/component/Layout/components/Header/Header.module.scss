@@ -18,81 +18,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.search,
-.search-result {
-    width: 361px;
-}
-
-.search {
-    height: var(--search-height);
-    padding-left: 16px;
-    display: flex;
-    position: relative;
-    background-color: rgba(22, 24, 35, 0.06);
-    border-radius: var(--search-border-radius);
-    border: 1px solid transparent;
-
-    input {
-        flex: 1;
-        height: 100%;
-        color: var(--black);
-        font-size: 1.6rem;
-        background-color: transparent;
-        caret-color: var(--primary);
-    }
-
-    input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: var(--search-top-spacer);
-        width: 1px;
-        right: var(--search-button-width);
-        height: calc(var(--search-height) - var(--search-top-spacer) * 2);
-        background-color: rgba(22, 24, 35, 0.12);
-    }
-
-    &:focus-within {
-        border-color: rgba(22, 24, 35, 0.2);
-    }
-}
-
-.search-title {
-    color: rgba(22, 24, 35, 0.5);
-    font-weight: 400;
-    font-size: 1.4rem;
-    padding: 5px 12px;
-}
-
-.clear,
-.loading {
-    position: absolute;
-    right: calc(var(--search-button-width) + 16px);
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(167, 167, 171);
-}
-
-.search-btn {
-    width: var(--search-button-width);
-    height: 100%;
-    font-size: 2rem;
-    color: rgba(22, 24, 35, 0.34);
-    border-top-right-radius: var(--search-border-radius);
-    border-bottom-right-radius: var(--search-border-radius);
-
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        cursor: pointer;
-    }
-
-    &:active {
-        background-color: rgba(22, 24, 35, 0.08);
-    }
-}
 
 // Action
 .action {
@@ -108,18 +33,34 @@
 }
 
 .action-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
     background-color: transparent;
     font-size: 2.2rem;
     color: #161823;
-    padding: 4px 12px;
+    padding: 4px 10px;
     cursor: pointer;
 }
-
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    padding: 0 6px;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'TikTokDisplayFont', sans-serif;
+    border-radius: 10px;
+    background-color: var(--primary);
+}
 .user-avatar {
     width: 32px;
     height: 32px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 12px;
+    margin-left: 14px;
     cursor: pointer;
 }
