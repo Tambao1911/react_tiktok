@@ -18,6 +18,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.logo-link {
+    display: flex;
+}
 
 // Action
 .action {
@@ -52,7 +55,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--white);
-    font-family: 'TikTokDisplayFont', sans-serif;
+    font-family: var(--font-family);
     border-radius: 10px;
     background-color: var(--primary);
 }
