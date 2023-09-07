@@ -5,7 +5,8 @@ import styles from './Button.module.scss';
 
 const cx = classNames.bind(styles)
 
-function Button({ to,
+function Button({
+    to,
     href,
     primary = false,
     outline = false,
@@ -62,9 +63,22 @@ function Button({ to,
 
         </Comp>
     );
-}
+};
 
 Button.prototype = {
+    to: PropTypes.string,
+    href: PropTypes.string,
+    primary: PropTypes.bool,
+    outline: PropTypes.bool,
+    text: PropTypes.bool,
+    disable: PropTypes.bool,
+    rounded: PropTypes.bool,
+    small: PropTypes.bool,
+    large: PropTypes.bool,
     children: PropTypes.node.isRequired,
-}
+    leftIcon: PropTypes.node,
+    rightIcon: PropTypes.node,
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+};
 export default Button;
