@@ -69,7 +69,6 @@ export const SearchIcon = ({ width = '2.4rem', height = '2.4rem', className }) =
 export const HomeIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
     <svg
         width="32"
-        dataE2e=""
         height="32"
         viewBox="0 0 48 48"
         fill="currentColor"
@@ -88,7 +87,6 @@ export const HomeActiveIcon = ({ width = '3.2rem', height = '3.2rem', className 
         className={className}
         width={width}
         height={height}
-        dataE2e=""
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +104,6 @@ export const UserGroupIcon = ({ width = '3.2rem', height = '3.2rem', className }
         className={className}
         width={width}
         height={height}
-        dataE2e=""
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +131,6 @@ export const UserGroupActiveIcon = ({ width = '3.2rem', height = '3.2rem', class
         className={className}
         width={width}
         height={height}
-        dataE2e=""
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +147,6 @@ export const LiveIcon = ({ width = '3.2rem', height = '3.2rem', className }) => 
         className={className}
         width={width}
         height={height}
-        dataE2e=""
         viewBox="0 0 32 32"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +165,6 @@ export const LiveActiveIcon = ({ width = '3.2rem', height = '3.2rem', className 
         className={className}
         width={width}
         height={height}
-        dataE2e=""
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
