@@ -15,12 +15,12 @@ import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
 
 import config from '~/config';
-import Button from '~/component/Button';
+import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-import Menu from '~/component/Popper/Menu';
-import { InboxIcon, MessageIcon, UploadIcon } from '~/component/icons';
-import Image from '~/component/Image';
+import Menu from '~/components/Popper/Menu';
+import { InboxIcon, MessageIcon, UploadIcon } from '~/components/icons';
+import Image from '~/components/Image';
 import Search from '../Search';
 
 const cx = classNames.bind(styles);
